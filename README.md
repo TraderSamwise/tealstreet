@@ -4,6 +4,10 @@ This GitHub page is for bug tracking / ticket tracking for the https://tealstree
 
 Request beta access via https://t.me/tealstreet
 
+## Keyboard Shortcuts to use in ShortKey Chrome extension
+
+link to extension https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?hl=en
+
 ```
 
 [
