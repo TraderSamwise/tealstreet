@@ -118,14 +118,13 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "key": "d",
     "action": "javascript",
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "open": false,
     "code": "nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set;\n\nbuyTrack = document.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0].value\nbuyTrack = parseFloat(buyTrack)\n\n    newBuyTrack = buyTrack + 0.5\n    nativeInputValueSetter .call(document.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0], newBuyTrack)\n        document.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0].dispatchEvent(new Event('input', { bubbles: true }));\n\n\nsellTrack= document.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0].value\nsellTrack= parseFloat(sellTrack)\n\n\n    newSellTrack = sellTrack - 0.5\n    nativeInputValueSetter .call(document.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0], newSellTrack)\n     document.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0].dispatchEvent(new Event('input', { bubbles: true }));",
     "activeInInputs": true,
     "exported": true,
     "sitesArray": [
       "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
     ],
     "label": "move track price offset on both sides closer to top book prices (stops at 0 offset)"
   },
@@ -135,10 +134,9 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "code": "nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set;\n\nbuyTrack = document.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0].value\nbuyTrack = parseFloat(buyTrack)\n\nif (buyTrack > 0) {\nnewBuyTrack = buyTrack - 0.5\nnativeInputValueSetter .call(document.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0], newBuyTrack)\ndocument.getElementsByClassName(\"ant-input-number-input-wrap\")[0].children[0].dispatchEvent(new Event('input', { bubbles: true }));\n}\n\nsellTrack= document.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0].value\nsellTrack= parseFloat(sellTrack)\n\nif (sellTrack < 0) {\nnewSellTrack = sellTrack + 0.5\nnativeInputValueSetter .call(document.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0], newSellTrack)\ndocument.getElementsByClassName(\"ant-input-number-input-wrap\")[3].children[0].dispatchEvent(new Event('input', { bubbles: true }));\n}",
     "activeInInputs": true,
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "move track price offset on both sides farther from top of book"
   },
@@ -146,14 +144,13 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "key": "ctrl+shift+a",
     "action": "javascript",
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "open": false,
     "code": "document.getElementsByClassName(\"List\")[0].children[0].children[3].children[0].children[0].children[1].click()\ndocument.getElementsByClassName(\"order-button\")[6].click()",
     "activeInInputs": true,
     "exported": true,
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "place buy order at price visible in bottom buy side of orderbook"
   },
@@ -161,14 +158,13 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "key": "ctrl+shift+d",
     "action": "javascript",
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "open": false,
     "code": "document.getElementsByClassName(\"List\")[0].children[0].children[3].children[1].children[0].children[1].click()\ndocument.getElementsByClassName(\"order-button\")[13].click()",
     "activeInInputs": true,
     "exported": true,
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "place sell order at price visible in bottom row sell side of orderbook"
   },
@@ -176,14 +172,13 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "key": "ctrl+alt+a",
     "action": "javascript",
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "open": false,
     "code": "document.getElementsByClassName(\"List\")[0].children[0].children[2].children[0].children[0].children[1].click()\ndocument.getElementsByClassName(\"order-button\")[6].click()",
     "activeInInputs": true,
     "exported": true,
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "place buy order at price visible in top buy side of orderbook"
   },
@@ -191,14 +186,13 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "key": "ctrl+alt+d",
     "action": "javascript",
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "open": false,
     "activeInInputs": true,
     "code": "document.getElementsByClassName(\"List\")[0].children[0].children[2].children[1].children[0].children[1].click()\ndocument.getElementsByClassName(\"order-button\")[13].click()",
     "exported": true,
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "place sell order at price visible in top sell side of orderbook"
   },
@@ -208,10 +202,9 @@ Please note, the "/trade/..." url / path must be the first page you visit when g
     "code": "if(typeof i !== 'undefined'){\n    let i;\n    let rows;\n}\n\ni = 0;\nrows = document.getElementsByClassName(\"ant-table-tbody\")[1].children;\n\nwhile (i < rows.length) {\n    let currRow = rows[i];\n    if (!currRow.classList.contains(\"updating-cell-row\")) {\n         currRow.children[7].children[0].click();\n        break;\n    }\n    i += 1;\n}",
     "activeInInputs": true,
     "blacklist": "whitelist",
-    "sites": "*tealstreet.io/trade*\n*192.168.86.34/trade*",
+    "sites": "*tealstreet.io/trade*",
     "sitesArray": [
-      "*tealstreet.io/trade*",
-      "*192.168.86.34/trade*"
+      "*tealstreet.io/trade*"
     ],
     "label": "cancel top listed active order (left most tab showing orders must be clicked to work)"
   }
