@@ -2,7 +2,7 @@
 
 This GitHub repo is for bug tracking / ticket tracking for the https://tealstreet.io trading terminal.
 
-Request beta access via https://t.me/tealstreet
+Request beta access via https://t.me/tealstreet or join our discord https://bit.ly/SamwiseDiscord
 
 ## Keyboard Shortcuts to use in ShortKey Chrome extension
 
