@@ -8,9 +8,12 @@ Request beta access via https://t.me/tealstreet or join our discord https://bit.
 
 link to extension https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?hl=en
 
-Extension is currently not available on Chrome Store. Should be fixed soon by the developer. For now, you can download it from this repo. Then on Chrome, go to manage your extensions. Turn on "developer mode", click "Load Unpacked Extension", go to where you downloaded ShortKeys. Click inside that folder, and upload the folder that has the versio number as the title. Local extensions wont sync between your computers like normal chrome extensions.
+Extension is now available on chrome store again. However, if you have trouble installing you can download it from this repo. Then on Chrome, go to manage your extensions. Turn on "developer mode", click "Load Unpacked Extension", go to where you downloaded ShortKeys. Click inside that folder, and upload the folder that has the versio number as the title. Local extensions wont sync between your computers like normal chrome extensions.
 
 Please note, the "/trade/..." url / path must be the first page you visit when going to https://www.tealstreet.io. If you, say, login first, such that the initial url you visit is "/login" then you must refresh once in the trading terminal before the shortcuts will work. This is because the ShortKeys shortcuts are only active on "/trade/..." to not interfere with other parts of the site, but because React uses a virtual router it doesn't detect changes to the url within the site itself, only the first page you visit. 
+
+When first setting up the extension, make sure to delete the dummy placeholder shortcut that shows up at the top when first installing. Also make sure to hit save at the bottom of the page after importing settings.
+
 
 ```
 
